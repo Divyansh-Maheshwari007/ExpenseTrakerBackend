@@ -10,6 +10,6 @@ const connectDB = async()=>{
         console.error("Error connecting to MongoDB",err);
         process.exit(1);
      }
-};
+};    
 
 module.exports = connectDB;

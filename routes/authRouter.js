@@ -16,8 +16,5 @@ router.post("/uploard-image", uploard.single("image"),(req,res) =>{
     }
     const imageUrl = `${req.protocol}: // ${req.get("host")}/uploard/${req.file.fieldname}`
 });
-
-
-
 module.exports = router;
 
